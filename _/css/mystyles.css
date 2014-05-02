@@ -1,8 +1,4 @@
-
-.ui-controlgroup-controls
-{
-    width:100%;
-}
-.ui-radio {
-    width:50%;
+#videolist img {
+	display: block;
+	width: 90%;
 }
