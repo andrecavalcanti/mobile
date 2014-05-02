@@ -5,10 +5,16 @@
 	<title>View Source</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
-	<link rel="stylesheet" href="_/css/jquery.mobile.css" />
+	
+	<!--link rel="stylesheet" href="_/css/jquery.mobile.css" />
 	<script src="_/js/jquery.js"></script>
-	<script src="_/js/jquery.mobile.js"></script>
+	<script src="_/js/jquery.mobile.js"></script-->
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<script src="http://demos.jquerymobile.com/1.4.0/js/jquery.js"></script>
+	
 
 	<script src="_/js/myscript.js"></script>
 	<link rel="stylesheet" href="_/css/mystyles.css" />
@@ -49,6 +55,10 @@
 				data-role="button"
 				data-icon="arrow-r"
 			>Tweets</a>
+			<a href="#flight" 
+				data-role="button"
+				data-icon="arrow-r"
+			>Flight</a>
 		</div><!-- links -->
 	</div><!-- page -->
 
@@ -149,34 +159,34 @@
 		</div><!-- header -->
 		<div data-role="content">
 
-	<div data-role="content">
-		<div class="ui-grid-a" id="videolist">
-			<div class="ui-block-a">
-				<a href="http://youtu.be/rD4P69D0X4k">
-					<div class="movietitle">Adobe Edge</div>
-					<img src="images/video_whatisedge.jpg" alt="Video: What is Adobe Edge?">
-				</a>
+			<div data-role="content">
+				<div class="ui-grid-a" id="videolist">
+					<div class="ui-block-a">
+						<a href="http://youtu.be/rD4P69D0X4k">
+							<div class="movietitle">Adobe Edge</div>
+							<img src="images/video_whatisedge.jpg" alt="Video: What is Adobe Edge?">
+						</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="http://youtu.be/MHdHKh4AswY">
+							<div class="movietitle">Edge UI</div>
+							<img src="images/video_edgeui.jpg" alt="Video: Understanding the Edge Interface">
+						</a>
+					</div>
+					<div class="ui-block-a">
+						<a href="http://youtu.be/MHdHKh4AswY">
+							<div class="movietitle">Toggle buttons</div>
+							<img src="images/video_toggle.jpg" alt="Video: Create Toggle button">
+						</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="http://youtu.be/MHdHKh4AswY">
+							<div class="movietitle">Image uploader</div>
+							<img src="images/video_uploader.jpg" alt="Video: Build an image uploader">
+						</a>
+					</div>
+				</div>
 			</div>
-			<div class="ui-block-b">
-				<a href="http://youtu.be/MHdHKh4AswY">
-					<div class="movietitle">Edge UI</div>
-					<img src="images/video_edgeui.jpg" alt="Video: Understanding the Edge Interface">
-				</a>
-			</div>
-			<div class="ui-block-a">
-				<a href="http://youtu.be/MHdHKh4AswY">
-					<div class="movietitle">Toggle buttons</div>
-					<img src="images/video_toggle.jpg" alt="Video: Create Toggle button">
-				</a>
-			</div>
-			<div class="ui-block-b">
-				<a href="http://youtu.be/MHdHKh4AswY">
-					<div class="movietitle">Image uploader</div>
-					<img src="images/video_uploader.jpg" alt="Video: Build an image uploader">
-				</a>
-			</div>
-		</div>
-	</div>
 
 		</div><!-- content -->
 		
@@ -278,6 +288,108 @@
 				>Info</a>
 		</div><!-- header -->
 		<p>Tweets page.</p>
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#blog" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Blog</a></li>
+					<li><a href="#videos" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Videos</a></li>
+					<li><a href="#photos" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Photos</a></li>
+					<li><a href="#" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Tweets</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+
+	<!-- Page: Flight -->
+	<div id="flight"
+		data-role="page"
+		data-title="View Source: Flight">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Tweets</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		
+		<div data-role="content">
+			
+				
+		    <fieldset data-role="controlgroup" data-type="horizontal">		    	
+		  		<div class="ui-grid-a">
+		  			<div class="ui-block-a">
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+			         	<label for="radio-choice-1">One-way</label>
+	         		</div>
+	         		<div class="ui-block-b">
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+			         	<label for="radio-choice-2">Return</label>	
+		         	</div>         		
+	         	</div>
+		    </fieldset>
+		    
+				
+			<fieldset data-role="controlgroup" data-type="horizontal">
+				<div class="ui-grid-a">
+					<div class="ui-block-a ui-hide-label">
+						<label for="username">From:</label>
+						<input type="text" name="from" id="airport" value="" placeholder="FROM"/>
+					</div>
+					<div class="ui-block-b ui-hide-label">
+						<label for="to">To:</label>
+						<input type="text" name="to" id="airport" value="" placeholder="TO"/>
+					</div>
+				</div>
+			</fieldset>
+
+			<hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;width:100%;">
+
+			<fieldset data-role="controlgroup" data-type="horizontal">
+				<div data-role="fieldcontain" class="ui-grid-a">				
+					<div class="ui-block-a">
+						<label for="depart">Depart</label>
+						<input type="date" data-role="date" name="depart" id="depart" value="" placeholder="DEPART"/>
+					</div>
+					<div class="ui-block-b">
+						<label for="to">Return</label>
+						<input type="date" data-role="date" name="return" id="return" value="test" placeholder="RETURN"/>
+					</div>				
+				</div>
+			</fieldset>	
+
+			<label for="checkbox-1">Flexible Dates</label>
+			<input type="checkbox" name="checkbox-1" id="checkbox-1"  />
+
+			<hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;width:100%;">
+						
+
+		</div><!-- content -->	
+
 		<div data-role="footer"
 			data-position="fixed"
 			data-id="vs_footer">
