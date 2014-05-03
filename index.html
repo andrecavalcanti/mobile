@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>View Source</title>
+	<title>Edson Fligh Scamp</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	
@@ -21,13 +21,20 @@
 	<style>
 		.ui-controlgroup-controls{width:100%;}
 		.ui-radio {width:100%;}
+		.ui-block-a {width:100%;}
+		.ui-select {width: 100%;}
+		p {text-align:center}
+		.ui-btn {width: 100%;}
+		.message {width: 100%;}
 	</style>
+	
+	
 </head>
 <body>
 	<!-- Page: home -->
 	<div id="home"
 		data-role="page"
-		data-title="View Source: Home">
+		data-title="Edson Fligh Scamp">
 
 		<div data-role="header"
 			data-position="fixed">
@@ -40,10 +47,10 @@
 				>Info</a>
 		</div><!-- header -->
 		<div data-role="content">
-			Welcome to the View Source App
+			Welcome to Edson's Flight Scamp
 		</div>
 		<div data-role="controlgroup">
-			<a href="#blog" 
+			<!--a href="#blog" 
 				data-role="button"
 				data-icon="arrow-r"
 			>Blog</a>
@@ -58,7 +65,7 @@
 			<a href="#tweets" 
 				data-role="button"
 				data-icon="arrow-r"
-			>Tweets</a>
+			>Tweets</a-->
 			<a href="#flight" 
 				data-role="button"
 				data-icon="arrow-r"
@@ -355,33 +362,47 @@
 			         	<label for="radio-choice-2">Return</label>	
 		         	</div>         		
 	         	</div>
-		    </fieldset>
-		    
-				
-			<fieldset data-role="controlgroup" data-type="horizontal">
-				<div class="ui-grid-a">
-					<div class="ui-block-a ui-hide-label">
-						<label for="username">From:</label>
-						<input type="text" name="from" id="airport" value="" placeholder="FROM"/>
-					</div>
-					<div class="ui-block-b ui-hide-label">
-						<label for="to">To:</label>
-						<input type="text" name="to" id="airport" value="" placeholder="TO"/>
-					</div>
-				</div>
-			</fieldset>
+		    </fieldset>				
 
-			<hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;width:100%;">
+			<fieldset data-role="controlgroup" data-type="horizontal">				
+				<div data-role="fieldcontain" class="ui-grid-a">
+					<div class="ui-block-a">	
+						<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="DEPART">
+							
+						    <li><a href="#">London, United Kingdon - Heathrow (LHR)</a></li>
+						    <li><a href="#">London, United Kingdon - Gatwick (LGW)</a></li>
+						    <li><a href="#">London, United Kingdon - London City Airport (LCY)</a></li>
+						    <li><a href="#">London, United Kingdon - Luton Airport (LTN)</a></li>
+						    <li><a href="#">London, United Kingdon - Stansted (STN)</a></li>
+						    <li><a href="#">London, United Kingdon - St. Pancreas Station (QQS)</a></li>
+						    <li><a href="#">London, United Kingdon - Southend (SEN)</a></li>
+						    <li><a href="#">London, United Kingdon - Eglinton (LDY)</a></li>			   
+						</ul>
+					</div>
+					<div class="ui-block-b">
+						<ul data-role="listview"  data-filter="true" data-filter-reveal="true" data-filter-placeholder="RETURN">
+						    <li><a href="#">London, United Kingdon - Heathrow (LHR)</a></li>
+						    <li><a href="#">London, United Kingdon - Gatwick (LGW)</a></li>
+						    <li><a href="#">London, United Kingdon - London City Airport (LCY)</a></li>
+						    <li><a href="#">London, United Kingdon - Luton Airport (LTN)</a></li>
+						    <li><a href="#">London, United Kingdon - Stansted (STN)</a></li>
+						    <li><a href="#">London, United Kingdon - St. Pancreas Station (QQS)</a></li>
+						    <li><a href="#">London, United Kingdon - Southend (SEN)</a></li>
+						    <li><a href="#">London, United Kingdon - Eglinton (LDY)</a></li>			   
+						</ul>
+					</div>
+				</div>	
+			</fieldset>	
 
 			<fieldset data-role="controlgroup" data-type="horizontal">
 				<div data-role="fieldcontain" class="ui-grid-a">				
 					<div class="ui-block-a">
 						<label for="depart">Depart</label>
-						<input type="date" data-role="date" name="depart" id="depart" value="" placeholder="DEPART"/>
+						<input type="date" data-role="date" name="depart" id="depart" value="" placeholder="FROM"/>
 					</div>
 					<div class="ui-block-b">
 						<label for="to">Return</label>
-						<input type="date" data-role="date" name="return" id="return" value="test" placeholder="RETURN"/>
+						<input type="date" data-role="date" name="return" id="return" value="test" placeholder="TO"/>
 					</div>				
 				</div>
 			</fieldset>	
@@ -389,8 +410,58 @@
 			<label for="checkbox-1">Flexible Dates</label>
 			<input type="checkbox" name="checkbox-1" id="checkbox-1"  />
 
-			<hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;width:100%;">
-						
+			<hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;width:100%;">	  	       
+		
+			   
+	        <fieldset data-role="controlgroup" data-type="horizontal" align="center">
+	        	<div data-role="fieldcontain" class="ui-grid-a">				
+					<div class="ui-block-a ui-hide-label">  
+			            <label for="travellers">Travellers</label>
+			            <select name="travellers" id="travellers">
+			              <option>Travellers</option>
+			              <option value="adults">Adults</option>
+			              <option value="youth">Youth</option>
+			              <option value="child">Child</option>
+			              <option value="lapinfant">Lap infant</option>	              
+			            </select>
+			        </div>
+			        <div class="ui-block-b ui-hide-label">  
+			            <label for="economy">Economy</label>
+			            <select name="economy" id="economy">
+			              <option>$ Economy</option>
+			              <option value="premiumeconomy">Premium Economy</option>
+			              <option value="business">Business</option>
+			              <option value="first">First</option>	              
+			            </select>
+			        </div>
+			     </div>   
+	         </fieldset>   
+		       		
+		    <fieldset data-role="controlgroup" data-type="horizontal" align="center">
+	        	<div data-role="fieldcontain" class="ui-grid-a">	   		
+					<div class="ui-block-a">
+						<label for="serachfrom">Execute search from</label>
+						<input type="date" data-role="date" name="serachfrom" id="serachfrom" value="" placeholder="DEPART"/>
+					</div>
+					<div class="ui-block-b">
+						<label for="searchto">Execute search to</label>
+						<input type="date" data-role="date" name="searchto" id="return" value="" placeholder="RETURN"/>
+					</div>					
+				</div>
+		    </fieldset>
+
+		    <label for="budget">$ Budget</label>
+		    <input type="range" name="budget" id="budjet" value="50" min="0" max="5000">		  
+
+			<label for="email">Email</label>
+			<input type="text" name="email" id="depart" value="" placeholder="@ Your email address here"/>
+			
+	      	<input  type="submit" data-inline="true" value="Save my flight search">     	
+	      	
+      		
+	      	<p>YOU WILL RECEIVE A NOTIFICATION ALERT WHEN WE MATCH YOUR SEARCH</p>
+	      	<p>You can cancel this search at any time!</p> 	
+			
 
 		</div><!-- content -->	
 
@@ -403,7 +474,7 @@
 					data-role="button"
 					data-icon="home"
 					>Home</a></li>
-					<li><a href="#blog" 
+					<!--li><a href="#blog" 
 					data-role="button"
 					data-icon="arrow-r"
 					>Blog</a></li>
@@ -418,7 +489,7 @@
 					<li><a href="#" 
 					data-role="button"
 					data-icon="arrow-r"
-					>Tweets</a></li>
+					>Tweets</a></li-->
 				</ul>
 			</div><!-- navbar -->
 		</div><!-- footer -->
@@ -429,7 +500,7 @@
 			<h1>About View Source</h1>
 		</div>
 		<div data-role="content">
-			<p>View Source offers short projects on intermediate to advanced web design topics, covering technologies such as HTML, PHP, jQuery, and CSS, as well as content management solutions like WordPress and integration with Twitter, YouTube, and more.</p>
+			<p>We can get flights according to your budget</p>
 			<a href="#"
 				data-role="button"
 				data-inline="true"
@@ -442,6 +513,31 @@
 		</div>
 	</div>
 	
+	<script>
+	
+	    var element = document.querySelectorAll('[placeholder]');
+
+	    for (var i in element) {
+	        if (element[i].nodeType == 1 && element[i].nodeName == "INPUT") {
+
+	            element[i].value = element[i].getAttribute('placeholder');
+	            element[i].style.color = "#777";
+
+	            element[i].onfocus = function (event) {
+	                if (this.value == this.getAttribute('placeholder')) {
+	                    this.value = "";
+	                    this.style.color = "#000"
+	                };
+	            };
+	            element[i].onblur = function (event) {
+	                if (this.value == "") {
+	                    this.value = this.getAttribute('placeholder');
+	                    this.style.color = "#777";
+	                }
+	            };
+	        }
+	    }
+	</script>
 	
 	
 </body>
