@@ -9,9 +9,8 @@
 	<!--link rel="stylesheet" href="_/css/jquery.mobile.css" />
 	<script src="_/js/jquery.js"></script>
 	<script src="_/js/jquery.mobile.js"></script-->
+	
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
-	<!--link rel="stylesheet" href="_/css/jquery.mobile-1.3.1.css" /-->
-	<!--link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /-->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 	<script src="http://demos.jquerymobile.com/1.4.0/js/jquery.js"></script>
@@ -25,15 +24,8 @@
 		.ui-block-a {width:100%;}
 		.ui-select {width: 100%;}
 		p {text-align:center}
-		/*.ui-btn {width: 100%;}*/
+		.ui-btn {width: 100%;}
 		.message {width: 100%;}
-		#saveflight {width: 100%;}
-		.ui-btn-inline {display: block;}
-		body,
-		.ui-page {
-		    min-height:100% !important;
-		    height:auto !important;
-		}
 	</style>
 	
 	
@@ -83,34 +75,271 @@
 	
 	</div><!-- page -->
 
-	
+	<!-- Page: blog -->
+	<div id="blog"
+		data-role="page"
+		data-title="View Source: Blog">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Blog</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div data-role="content">
+			<div data-role="collapsible-set">
+				<div data-role="collapsible">
+					<h3>A JSON Tutorial. Getting started with JSON</h3>
+					<p>Getting started with JavaScript Object Notation. A JSON tutorial for Absolute Beginners</p>
+				</div><!-- collapsible -->
+				
+				<div data-role="collapsible"
+					data-collapsed="false">
+					<h3>WordPress Newbie Tip…control length of posts on homepage</h3>
+					<p>If your WordPress site is set up to show the full length articles</p>
+				</div><!-- collapsible -->
+				
+				<div data-role="collapsible">
+					<h3>Tips for finding a great domain name</h3>
+					<p>Workflow tips and tricks for Adobe In-Design</p>
+				</div><!-- collapsible -->
+				
+				<div data-role="collapsible">
+					<h3>Advantages of Creating Subdomain Shortcuts</h3>
+					<p>Creating sub-domains gives you the ability to create shortcuts</p>
+				</div><!-- collapsible -->
+				
+				<div data-role="collapsible">
+					<h3>Creating a Photo Rotator with JQuery Cycle</h3>
+					<p>I love the JQuery tagline…write less, do more. </p>
+				</div><!-- collapsible -->
+			</div><!-- accordion -->
+		</div><!-- content -->
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Blog</a></li>
+					<li><a href="#videos" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Videos</a></li>
+					<li><a href="#photos" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Photos</a></li>
+					<li><a href="#tweets" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Tweets</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
 
+	<!-- Page: Videos -->
+	<div id="videos"
+		data-role="page"
+		data-title="View Source: Videos">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Videos</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div data-role="content">
+
+			<div data-role="content">
+				<div class="ui-grid-a" id="videolist">
+					<div class="ui-block-a">
+						<a href="http://youtu.be/rD4P69D0X4k">
+							<div class="movietitle">Adobe Edge</div>
+							<img src="images/video_whatisedge.jpg" alt="Video: What is Adobe Edge?">
+						</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="http://youtu.be/MHdHKh4AswY">
+							<div class="movietitle">Edge UI</div>
+							<img src="images/video_edgeui.jpg" alt="Video: Understanding the Edge Interface">
+						</a>
+					</div>
+					<div class="ui-block-a">
+						<a href="http://youtu.be/MHdHKh4AswY">
+							<div class="movietitle">Toggle buttons</div>
+							<img src="images/video_toggle.jpg" alt="Video: Create Toggle button">
+						</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="http://youtu.be/MHdHKh4AswY">
+							<div class="movietitle">Image uploader</div>
+							<img src="images/video_uploader.jpg" alt="Video: Build an image uploader">
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div><!-- content -->
+		
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#blog" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Blog</a></li>
+					<li><a href="#" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Videos</a></li>
+					<li><a href="#photos" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Photos</a></li>
+					<li><a href="#tweets" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Tweets</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
 	
+	<!-- Page: Photos -->
+	<div id="photos"
+		data-role="page"
+		data-title="View Source: Photos">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Photos</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<p>Photos from Flickr</p>
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#blog" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Blog</a></li>
+					<li><a href="#videos" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Videos</a></li>
+					<li><a href="#" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Photos</a></li>
+					<li><a href="#tweets" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Tweets</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+	
+	<!-- Page: Tweets -->
+	<div id="tweets"
+		data-role="page"
+		data-title="View Source: Tweets">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Tweets</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<p>Tweets page.</p>
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#blog" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Blog</a></li>
+					<li><a href="#videos" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Videos</a></li>
+					<li><a href="#photos" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Photos</a></li>
+					<li><a href="#" 
+					data-role="button"
+					data-icon="arrow-r"
+					>Tweets</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
 
 	<!-- Page: Flight -->
 	<div id="flight"
 		data-role="page"
 		data-title="View Source: Flight">
 
-		<div data-role="panel" id="myPanel" data-position="right" data-display="push"> 
-		    <h2>Budget Flight</h2>		    
-		    <ul data-role="listview" data-inset="true" data-filter="true">    
-		      <li><a href="#">Montreal - Rio $1000</a></li>
-		      <li ><a href="#">Montreal - Rio $1100</a></li>
-		      <li ><a href="#">Montreal - Rio $1050</a></li>
-		      <li ><a href="#">Montreal - Rio $1001</a></li>
-		      <li ><a href="#">Montreal - Rio $1002</a></li>   
-		      <li ><a href="#">Montreal - Rio $1010</a></li>
-		    </ul>
-	  	</div> 
-
-		<div data-role="header"
-			data-position="fixed"
-			data-id="vs_header">
-		    
-		    <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
-		    <h1>Settings</h1>		    
-		    <a href="#myPanel" class="ui-btn ui-btn-inline ui-icon-grid ui-corner-all ui-shadow ui-btn-icon-notext"></a>
+		<div data-role="header">
+		    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+		    <h1>Welcome To My Homepage</h1>
+		    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
 	  	</div>
 
 		<!--div data-role="panel" id="myPanel"> 
@@ -185,8 +414,6 @@
 				</div>	
 			</fieldset>	
 
-			<hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;width:100%;">	
-
 			<fieldset data-role="controlgroup" data-type="horizontal">
 				<div data-role="fieldcontain" class="ui-grid-a">				
 					<div class="ui-block-a">
@@ -249,17 +476,7 @@
 			<label for="email">Email</label>
 			<input type="text" name="email" id="depart" value="" placeholder="@ Your email address here"/>
 			
-	      	<!--a href="#myPopup" data-rel="popup" input type="submit"  id="saveflight" type="submit" data-inline="true" value="Save my flight search" ></a> 
-
-	      	<input  type="submit" data-inline="true" value="Save my flight search"> 
-	      	 <!--a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show Popup</a-->
-
-	      	<a href="#popupCloseRight" data-rel="popup" data-role="button" data-inline="true">Submit</a>
-
-	      	<div data-role="popup" id="popupCloseRight" class="ui-content" style="max-width:280px">
-			    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Submit</a>
-			    <p>You will receive a notification as soon as a flight is found within the settings</p>
-			</div>  	
+	      	<input  type="submit" data-inline="true" value="Save my flight search">     	
 	      	
       		
 	      	<p>YOU WILL RECEIVE A NOTIFICATION ALERT WHEN WE MATCH YOUR SEARCH</p>
@@ -340,11 +557,6 @@
 	            };
 	        }
 	    }
-
-	    $(document).on('click', '.ui-link', function () {
-		/*alert('text cleared');*/
-			$('input[type="text"]').val('');
-		});
 	</script>
 	
 	
