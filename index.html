@@ -9,16 +9,21 @@
 	<!--link rel="stylesheet" href="_/css/jquery.mobile.css" />
 	<script src="_/js/jquery.js"></script>
 	<script src="_/js/jquery.mobile.js"></script-->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
 	<!--link rel="stylesheet" href="_/css/jquery.mobile-1.3.1.css" /-->
-	<!--link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /-->
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  	<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="andre.css" />
+
+	<!--script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-	<script src="http://demos.jquerymobile.com/1.4.0/js/jquery.js"></script>
+	<script src="http://demos.jquerymobile.com/1.4.0/js/jquery.js"></script-->
+
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 	
 
-	<script src="_/js/myscript.js"></script>
-	<link rel="stylesheet" href="_/css/mystyles.css" />
+	<!--script src="_/js/myscript.js"></script>
+	<link rel="stylesheet" href="_/css/mystyles.css" /-->
 	<style>
 		.ui-controlgroup-controls{width:100%;}
 		.ui-radio {width:100%;}
@@ -34,6 +39,20 @@
 		    min-height:100% !important;
 		    height:auto !important;
 		}
+		#depart-return {
+		    
+		    height:90px !important;
+		}
+		#trav-economy {
+		    
+		    height:60px !important;
+		}
+		#exec-search {
+		    
+		    margin-top:3px !important;
+		    margin-bottom:3px !important;
+		}
+
 	</style>
 	
 	
@@ -42,7 +61,7 @@
 	<!-- Page: home -->
 	<div id="home"
 		data-role="page"
-		data-title="Edson Fligh Scamp">
+		data-title="Edson Fligh Scamp" >
 
 		<div data-role="header"
 			data-position="fixed">
@@ -145,20 +164,20 @@
 		    <fieldset data-role="controlgroup" data-type="horizontal" >		    	
 		  		<div class="ui-grid-a">
 		  			<div class="ui-block-a ">
-			         	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" data-mini="true"/>
 			         	<label for="radio-choice-1">One-way</label>
 	         		</div>
 	         		<div class="ui-block-b">
-			         	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  data-mini="true"/>
 			         	<label for="radio-choice-2">Return</label>	
 		         	</div>         		
 	         	</div>
 		    </fieldset>				
 
-			<fieldset data-role="controlgroup" data-type="horizontal">				
+			<fieldset data-role="controlgroup" data-type="horizontal" class="ui-mini" style="margin-bottom:12px; margin-top:1px; height:50px;">				
 				<div data-role="fieldcontain" class="ui-grid-a">
 					<div class="ui-block-a">	
-						<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="FROM">
+						<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="FROM" >
 							
 						    <li><a href="#">London, United Kingdon - Heathrow (LHR)</a></li>
 						    <li><a href="#">London, United Kingdon - Gatwick (LGW)</a></li>
@@ -185,9 +204,9 @@
 				</div>	
 			</fieldset>	
 
-			<hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;width:100%;">	
+			<hr style="height:3px; background-color:#ccc; border:0; margin-top:6px; margin-bottom:6px;width:100%;">	
 
-			<fieldset data-role="controlgroup" data-type="horizontal">
+			<fieldset data-role="controlgroup" data-type="horizontal" class="ui-mini" id="depart-return">
 				<div data-role="fieldcontain" class="ui-grid-a">				
 					<div class="ui-block-a">
 						<label for="depart">Depart</label>
@@ -195,22 +214,22 @@
 					</div>
 					<div class="ui-block-b">
 						<label for="to">Return</label>
-						<input type="date" data-role="date" name="return" id="return" value="test" placeholder="TO"/>
+						<input type="date" data-role="date" name="return" id="return" value="test" placeholder="TO" />
 					</div>				
 				</div>
 			</fieldset>	
 
 			<label for="checkbox-1">Flexible Dates</label>
-			<input type="checkbox" name="checkbox-1" id="checkbox-1" />
+			<input type="checkbox" name="checkbox-1" id="checkbox-1" data-mini="true"/>
 
-			<hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;width:100%;">	    
+			<hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:6px;width:100%;">	    
 		
 			   
-	        <fieldset data-role="controlgroup" data-type="horizontal" align="center">
+	        <fieldset data-role="controlgroup" data-type="horizontal" align="center" id="trav-economy">
 	        	<div data-role="fieldcontain" class="ui-grid-a">				
 					<div class="ui-block-a ui-hide-label">  
 			            <label for="travellers">Travellers</label>
-			            <select name="travellers" id="travellers">
+			            <select name="travellers" id="travellers" class="ui-mini">
 			              <option>Travellers</option>
 			              <option value="adults">Adults</option>
 			              <option value="youth">Youth</option>
@@ -220,7 +239,7 @@
 			        </div>
 			        <div class="ui-block-b ui-hide-label">  
 			            <label for="economy">Economy</label>
-			            <select name="economy" id="economy">
+			            <select name="economy" id="economy" class="ui-mini">
 			              <option>$ Economy</option>
 			              <option value="premiumeconomy">Premium Economy</option>
 			              <option value="business">Business</option>
@@ -230,40 +249,40 @@
 			     </div>   
 	         </fieldset>   
 		       		
-		    <fieldset data-role="controlgroup" data-type="horizontal" align="center">
-	        	<div data-role="fieldcontain" class="ui-grid-a">	   		
+		    <fieldset data-role="controlgroup" data-type="horizontal" align="center" >
+	        	<div data-role="fieldcontain" class="ui-grid-a" id="exec-search">	   		
 					<div class="ui-block-a">
 						<label for="serachfrom" style="font-size:90%">Execute search from</label>
-						<input type="date" data-role="date" name="serachfrom" id="serachfrom" value="" placeholder="FROM"/>
+						<input type="date" data-role="date" name="serachfrom" id="serachfrom" value="" placeholder="FROM" data-mini="true"/>
 					</div>
 					<div class="ui-block-b">
 						<label for="searchto" style="font-size:90%">Execute search to</label>
-						<input type="date" data-role="date" name="searchto" id="return" value="" placeholder="TO"/>
+						<input type="date" data-role="date" name="searchto" id="return" value="" placeholder="TO" data-mini="true"/>
 					</div>					
 				</div>
 		    </fieldset>
 
-		    <label for="budget">$ Budget</label>
-		    <input type="range" name="budget" id="budjet" value="50" min="0" max="5000">		  
+		    <label for="budget" style="align-center">$ Budget</label>
+		    <input type="range" name="budget" id="budjet" value="50" min="0" max="5000" data-mini="true">		  
 
-			<label for="email">Email</label>
-			<input type="text" name="email" id="depart" value="" placeholder="@ Your email address here"/>
+			<!--label for="email">Email</label-->
+			<input type="text" name="email" id="depart" value="" data-mini="true" placeholder="@ Your email address here"/>
 			
 	      	<!--a href="#myPopup" data-rel="popup" input type="submit"  id="saveflight" type="submit" data-inline="true" value="Save my flight search" ></a> 
 
 	      	<input  type="submit" data-inline="true" value="Save my flight search"> 
 	      	 <!--a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show Popup</a-->
 
-	      	<a href="#popupCloseRight" data-rel="popup" data-role="button" data-inline="true">Submit</a>
+	      	<a href="#popupCloseRight" data-rel="popup" data-role="button" data-mini="true" data-inline="true">Submit</a>
 
 	      	<div data-role="popup" id="popupCloseRight" class="ui-content" style="max-width:280px">
-			    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Submit</a>
-			    <p>You will receive a notification as soon as a flight is found within the settings</p>
+			    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right ui-mini">Submit</a>
+			    <p >You will receive a notification as soon as a flight is found within the settings</p>
 			</div>  	
 	      	
       		
-	      	<p>YOU WILL RECEIVE A NOTIFICATION ALERT WHEN WE MATCH YOUR SEARCH</p>
-	      	<p>You can cancel this search at any time!</p> 	
+	      	<p class="ui-mini">YOU WILL RECEIVE A NOTIFICATION ALERT WHEN WE MATCH YOUR SEARCH</p>
+	      	<p class="ui-mini">You can cancel this search at any time!</p> 	
 			
 
 		</div><!-- content -->	
